@@ -21,9 +21,10 @@ section [class~='section-title']{
     align-items: center;
     display: flex;
 }
-.flex-item{
+#main .flex-item{
     flex: 0 0 33%
 }
+
 [class='box box-bg'] h2:hover{
     transition: all 0.5s;
     background-color: #87CEFA;
