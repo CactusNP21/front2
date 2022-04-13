@@ -18,13 +18,15 @@ section [class~='section-title']{
     color: #87CEFA;
 }
 #main{
-    align-items: center;
     display: flex;
+    align-items: center;
 }
-#main .flex-item{
-    flex: 0 0 33%
+.tm-team-description-container {
+    flex: 1 0 33.33%;
 }
-
+.flex-item > img {
+    width: 100%;
+}
 [class='box box-bg'] h2:hover{
     transition: all 0.5s;
     background-color: #87CEFA;
@@ -59,8 +61,8 @@ section:before{
 #we-are li{
     margin: 0 20px;
 }
-#we-are a:visited{
-    text-decoration: underline;
+#we-are a:link{
+
 }
 #our-work div[class~='flex-item'] p:nth-of-type(1) {
     font-style: italic;
