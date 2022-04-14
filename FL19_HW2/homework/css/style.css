@@ -8,7 +8,7 @@
 }
 .tm-nav-item-link:hover{
     background-color: #87CEFA;
-    color: white;
+    color: #fff;
 }
 section [class~='section-title']{
     color: #87CEFA;
@@ -30,7 +30,7 @@ section [class~='section-title']{
 [class='box box-bg'] h2:hover{
     transition: all 0.5s;
     background-color: #87CEFA;
-    color: white;
+    color: #fff;
     font-weight: bold;
 }
 .box-bg h2{
@@ -43,7 +43,7 @@ section:before{
     height: 0;
     border-style: solid;
     border-width: 40px 240px 0 0;
-    border-color: #00c3d9 transparent transparent transparent;
+    border-color: #00c3d9b3 transparent transparent transparent;
 }
 #we-are{
     text-transform: capitalize;
@@ -61,8 +61,8 @@ section:before{
 #we-are li{
     margin: 0 20px;
 }
-#we-are a:link{
-
+#we-are a:visited{
+    border-bottom: 1px solid black;
 }
 #our-work div[class~='flex-item'] p:nth-of-type(1) {
     font-style: italic;
@@ -138,8 +138,11 @@ section:before{
         flex-direction: column;
         justify-content: center;
     }
+    #main p{
+        color: #000;
+    }
     #main .color-blue{
-        color: black;
+        color: #000;
     }
     #main h2{
         color: blue;
