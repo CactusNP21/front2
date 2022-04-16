@@ -1,0 +1,365 @@
+@mixin center-part($width, $height) {
+  margin: 0 auto;
+  width: $width;
+  height: $height;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin section-item {
+  .items {
+    width: 900px;
+    height: auto;
+    flex-grow: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 12px 0 rgba(61, 55, 61, 0.7);
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: stretch;
+
+      h3 {
+        margin: 30px 10px 10px 20px;
+        font-size: 34px;
+        color: $cards-h-color;
+        text-align: center;
+      }
+
+      p {
+        margin: 0 20px 20px 20px;
+      }
+
+    }
+
+    @each $number, $path in $image-cards {
+      .image#{$number} {
+        display: inline-block;
+        flex: 1 0 33%;
+        background-image: url($path);
+        background-size: cover;
+      }
+    }
+
+  }
+}
+
+
+header {
+  @include center-part(1600px, 790px);
+  background-color: white;
+  background-image: url($header-bg);
+  background-size: cover;
+  border-radius: 0 50% 50% 0;
+
+  nav {
+    position: relative;
+    top: -10px;
+    left: 40px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+    width: 1200px;
+
+    a {
+      font-size: 22px;
+      margin: 20px;
+      color: $color-d1-a;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+
+  h1, button {
+    align-content: center;
+  }
+
+  h1 {
+    text-align: center;
+    max-width: 800px;
+    top: 60px;
+    font-size: 50px;
+    font-family: $font;
+    color: #dddddd;
+    font-weight: 100;
+  }
+
+  button {
+    background-color: transparent;
+    border: 2px solid #7c7c7c;
+    width: 150px;
+    height: 50px;
+    color: #737378;
+    position: relative;
+    top: -25px;
+    font-weight: bold;
+  }
+
+}
+
+main {
+  @include center-part(auto, auto);
+  background-color: white;
+
+  p, h3, h2 {
+    @include reset;
+  }
+
+  h2 {
+    margin: 30px 0 30px 0;
+    font-weight: map-get($font-weights, "regular");
+    font-size: 36px;
+  }
+
+  section {
+    @include section-item;
+    margin-bottom: 40px;
+
+    .tours {
+      display: flex;
+      flex-direction: column;
+      align-content: stretch;
+    }
+  }
+
+  .reviews {
+    @include center-part(1300px, auto);
+    background-color: $reviews-bg;
+    margin-bottom: 50px;
+
+    h3 {
+      font-size: 30px;
+      color: $review-h-color;
+      margin-top: 20px;
+      font-weight: lighter;
+    }
+
+    .box-row {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+      justify-content: space-evenly;
+      align-content: center;
+
+      p {
+        color: white;
+        margin: 10px 10px 0 0;
+      }
+
+      .name {
+        font-style: italic;
+        margin: 0 0 10px 0;
+      }
+
+      .review {
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        justify-content: space-evenly;
+        flex: 1 0 25%;
+        background-color: $review-box-bg;
+        max-width: 400px;
+        margin: 20px;
+      }
+
+      .review:nth-of-type(2) {
+        margin: 20px 0;
+      }
+
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+      }
+
+      .img-circle {
+        flex: 1 0 20%;
+        margin: 10px 30px 0 10px;
+
+        img {
+          border-radius: 100px;
+          width: 100%;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+
+  .find-tower {
+    @include center-part(900px, 200px);
+    background-color: $find-tower-bg;
+    margin-bottom: 60px;
+
+    fieldset {
+      border: 0;
+      padding: 0;
+      margin: 0;
+
+    }
+
+    .passengers {
+      margin-left: 20px;
+    }
+
+    input, select {
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid #606a74;
+      color: #767886;
+      margin: 20px;
+    }
+
+    select {
+      color: #4d4d4d;
+    }
+
+    h2 {
+      font-weight: lighter;
+      margin-bottom: 0;
+      color: $find-tower-h2-color;
+    }
+  }
+
+  footer {
+    @include center-part(1600px, 300px);
+    flex-direction: row;
+    background: $footer-bg;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  h3 {
+    color: $footer-h3-color;
+  }
+
+
+  .column1 {
+    margin: 30px 15px 0 40px;
+    flex: 1 0 27%;
+
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    .social-media {
+      margin-bottom: 40px;
+
+      img {
+        margin-right: 20px;
+      }
+    }
+
+    img {
+      width: 30px;
+    }
+
+    p {
+      color: $footer-p-color;
+    }
+  }
+
+  .column2 {
+    margin: 30px 10px 0 15px;
+    flex: 1 0 15%;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    .where-to-go {
+      display: flex;
+      flex-direction: column;
+      padding-left: 22px;
+
+      a {
+        color: $footer-a-color;
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  .column3 {
+    @extend .column2;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    .help {
+      @extend .where-to-go;
+      padding-left: 10px;
+      a {
+        color: $footer-a-color;
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  .column4 {
+    margin: 50px 30px 0 15px;
+    flex: 1 0 28%;
+
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    .feedback {
+      color: black;
+    }
+
+    fieldset {
+      border: 0;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        width: 100%;
+        height: 30px;
+        border: 0;
+        margin-bottom: 20px;
+
+        &::placeholder {
+          padding-left: 10px;
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 30px;
+        padding: 0;
+        border: 0;
+        background-color: $footer-btn;
+        color: white;
+      }
+    }
+
+    #pm {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 50px;
+      margin-right: 10px;
+      object-fit: scale-down;
+    }
+  }
+
+}
+
