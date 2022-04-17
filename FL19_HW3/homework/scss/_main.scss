@@ -14,6 +14,13 @@
   padding: 0;
 }
 
+@mixin card-settings($path) {
+  display: inline-block;
+  flex: 1 0 33%;
+  background-image: url($path);
+  background-size: cover;
+}
+
 @mixin section-item {
   .items {
     width: 900px;
@@ -47,10 +54,7 @@
 
     @each $number, $path in $image-cards {
       .image#{$number} {
-        display: inline-block;
-        flex: 1 0 33%;
-        background-image: url($path);
-        background-size: cover;
+        @include card-settings(#{$path});
       }
     }
 
@@ -303,6 +307,7 @@ main {
     .help {
       @extend .where-to-go;
       padding-left: 10px;
+
       a {
         color: $footer-a-color;
         margin-bottom: 3px;

@@ -90,17 +90,17 @@ main {
       main section .items .image2 {
         display: inline-block;
         flex: 1 0 33%;
-        background-image: url("../img/1.jpg");
+        background-image: url(../img/1.jpg);
         background-size: cover; }
       main section .items .image3 {
         display: inline-block;
         flex: 1 0 33%;
-        background-image: url("../img/2.jpg");
+        background-image: url(../img/2.jpg);
         background-size: cover; }
       main section .items .image4 {
         display: inline-block;
         flex: 1 0 33%;
-        background-image: url("../img/3.jpg");
+        background-image: url(../img/3.jpg);
         background-size: cover; }
     main section .tours {
       display: flex;
