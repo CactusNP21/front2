@@ -1,0 +1,207 @@
+body, header nav a, main .start h1 {
+  font-family: 'Montserrat', sans-serif; }
+
+a:hover, button:hover {
+  cursor: pointer; }
+
+body {
+  margin: 0; }
+  body h1, body h2, body h3 {
+    margin: 0; }
+  body h2 {
+    font-weight: 500; }
+  body p {
+    font-weight: 400;
+    margin: 0; }
+  body a {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.2vw; }
+
+header {
+  width: 95vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto; }
+  header img {
+    object-fit: cover;
+    width: 10%;
+    margin-right: 2%; }
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 35%; }
+    header nav a {
+      font-size: 0.8vw;
+      font-weight: 600;
+      text-transform: uppercase; }
+  header button {
+    margin-left: auto;
+    border-radius: 0.5vw;
+    border: transparent;
+    background-color: #079FD0;
+    max-height: 47px;
+    width: 17%;
+    color: #FFFFFF;
+    font-size: 1vw; }
+
+main {
+  width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  main .start {
+    width: 82%;
+    height: 90vh;
+    position: relative;
+    background: #C4C4C4AD;
+    margin-bottom: 7vw; }
+    main .start h1, main .start h2, main .start h3 {
+      margin: 0; }
+    main .start .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      top: 15%;
+      height: 68%;
+      width: 90%;
+      position: relative;
+      left: 10%; }
+    main .start h1 {
+      font-size: 20vw;
+      align-self: flex-start;
+      max-width: 40vw;
+      font-weight: 400;
+      line-height: 80%; }
+    main .start h2 {
+      position: relative;
+      font-size: 3.5vw;
+      max-width: 40%;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #FFFFFF; }
+    main .start h3 {
+      position: relative;
+      font-size: 1.8vw;
+      display: flex;
+      flex-direction: column;
+      color: #FFFFFF;
+      font-weight: 400; }
+    main .start .main-img {
+      position: absolute;
+      left: 64%;
+      top: 24%;
+      width: 40vw; }
+      main .start .main-img img {
+        width: 45vw;
+        object-fit: cover; }
+  main #sec1, main #sec2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    margin-bottom: 9vw; }
+    main #sec1 .image img, main #sec2 .image img {
+      width: 47vw;
+      object-fit: contain; }
+    main #sec1 .sec-des, main #sec2 .sec-des {
+      width: 40vw;
+      height: 21vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      position: relative; }
+      main #sec1 .sec-des h2, main #sec2 .sec-des h2 {
+        max-width: 70%;
+        color: #079FD0;
+        font-size: 3vw; }
+      main #sec1 .sec-des p, main #sec2 .sec-des p {
+        position: relative;
+        max-width: 100%;
+        font-size: 1.8vw; }
+      main #sec1 .sec-des a, main #sec2 .sec-des a {
+        position: relative;
+        color: #079FD0;
+        text-transform: uppercase; }
+  main #sec2 {
+    flex-direction: row-reverse; }
+    main #sec2 .sec-des {
+      right: 0;
+      left: 9%; }
+      main #sec2 .sec-des p {
+        max-width: 85%; }
+    main #sec2 img {
+      justify-self: flex-end; }
+  main #sec3 {
+    display: flex;
+    flex-direction: column;
+    height: 50vw; }
+    main #sec3 h2 {
+      align-self: center;
+      font-size: 3vw;
+      color: #079FD0;
+      height: 15%; }
+    main #sec3 #cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      left: 2%;
+      height: 90%; }
+      main #sec3 #cards h3 {
+        font-size: 2vw;
+        font-weight: 400;
+        color: #079FD0; }
+      main #sec3 #cards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90%;
+        max-width: 33%; }
+        main #sec3 #cards .card img {
+          width: 27.5vw;
+          object-fit: cover; }
+        main #sec3 #cards .card .description {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 40%;
+          max-width: 80%; }
+        main #sec3 #cards .card p {
+          font-size: 1.4vw; }
+        main #sec3 #cards .card a {
+          color: #079FD0;
+          text-transform: uppercase; }
+
+footer {
+  width: 93vw;
+  padding: 3vw;
+  background-color: #C4C4C433;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 15vw; }
+  footer img {
+    object-fit: cover;
+    width: 10%; }
+  footer div {
+    display: flex;
+    flex-direction: column; }
+  footer .col1 a, footer .col2 a, footer .col3 a, footer .col4 a {
+    font-size: 1.4vw;
+    margin-bottom: 20%;
+    font-weight: 400; }
+  footer .col4 {
+    position: relative;
+    left: 2%; }
+    footer .col4 p {
+      font-weight: bolder; }
+
+/*# sourceMappingURL=style.css.map */
