@@ -18,7 +18,6 @@ const attempts = 3
 while (res) {
     x += 1
     random = Math.floor(Math.random() * pool)
-    alert(random)
     cur_prize = start_prize * x
     for (i = attempts; i > 0; i--) {
         num = +prompt(`Choose a roulette pocket number from 0 to ${pool - 1}
