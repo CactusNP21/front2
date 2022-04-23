@@ -20,6 +20,7 @@ while (check) {
     }
     if (fst_number >= sec_num) {
         alert('Invalid input data')
+        continue
     }
     check = false
 }
