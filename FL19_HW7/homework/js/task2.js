@@ -11,7 +11,6 @@ let x = 0;
 let cur_prize;
 let pool = 9
 
-const pool_increase = 5
 const start_prize = 100
 const attempts = 3
 
@@ -36,7 +35,8 @@ Possible prize on current attempt: ${cur_prize}$`)
         if (cur_prize < 25 * x) {
             alert(`Thank you for your participation. Your prize is: ${prize} $`)
             x = 0
-            pool += pool_increase
+            prize = 0
+            pool = 9
             res = confirm('Do you want play again?')
         }
     }
