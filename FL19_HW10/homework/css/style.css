@@ -1,0 +1,33 @@
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+input{
+    width: 6vw;
+    height: 2vw;
+}
+.buttons{
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+}
+.buttons button{
+    background-color: darkcyan;
+    color: white;
+    border: 0;
+    padding: 2%;
+}
+#clicker{
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    border: 0;
+    background-color: coral;
+    color: floralwhite;
+    font-size: 1vw;
+}
