@@ -7,6 +7,7 @@ function calculateSum(arr) {
     return s
 }
 
+// eslint-disable-next-line no-magic-numbers
 console.log(calculateSum([1, 2, 3, 4, 5])); //15
 
 // #2
@@ -29,7 +30,9 @@ function isTriangle(a, b, c) {
 
 }
 
+// eslint-disable-next-line no-magic-numbers
 console.log(isTriangle(5, 6, 7)); //true
+// eslint-disable-next-line no-magic-numbers
 console.log(isTriangle(2, 9, 3)); //false
 
 // #3
@@ -53,6 +56,7 @@ console.log(isPalindrome('abbabba')); //true
 // #5
 function showFormattedDate(dateObj) {
     const dataList = dateObj.toString().split(' ')
+    // eslint-disable-next-line no-magic-numbers
     return `${dataList[2]} of ${dataList[1]}, ${dataList[3]}`
 }
 
