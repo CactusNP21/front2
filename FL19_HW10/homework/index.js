@@ -19,7 +19,7 @@ document.getElementById('start').addEventListener('click', function () { //start
     const nickname = document.getElementById('nickname').value;
 
     function checkEmpty(nick) {
-        if (!nick) {
+        if (!nick.trim()) {
             throw nicknameError
         }
     }
