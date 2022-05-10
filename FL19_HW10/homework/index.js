@@ -1,5 +1,9 @@
-localStorage.setItem('bestResult', '0')
-sessionStorage.setItem('bestResult', '0')
+if (localStorage.getItem('bestResult') === null) {
+    localStorage.setItem('bestResult', '0')
+}
+if (sessionStorage.getItem('bestResult') === null) {
+    sessionStorage.setItem('bestResult', '0')
+}
 
 let nicknameError = {
     name: 'NickNameError', message: 'Empty nickname'
@@ -50,13 +54,13 @@ document.getElementById('start').addEventListener('click', function () { //start
 
 document.getElementById('best').addEventListener('click', function () { //best result
     alert(
-`Best result is: ${sessionStorage.getItem('bestResult')}`
+        `Best result is: ${sessionStorage.getItem('bestResult')}`
     )
 })
 
 document.getElementById('best-flt').addEventListener('click', function () { //best  for all time result
-    alert(
-`Best result for the whole time is: ${localStorage.getItem('bestResult')} by ${localStorage.getItem('bestGamer')}`
+    alert(`
+Best result for the whole time is: ${localStorage.getItem('bestResult')} by ${localStorage.getItem('bestGamer')}`
     )
 })
 
