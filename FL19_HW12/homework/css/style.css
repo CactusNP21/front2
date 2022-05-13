@@ -1,0 +1,35 @@
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+}
+
+div{
+    padding: 10px;
+    background-color: coral;
+}
+
+input{
+    height: 100px;
+    width: 100px;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.gbg{
+    background-color: green;
+}
+
+.greybg{
+    background-color: grey;
+}
+
+.ybg{
+    background-color: yellow;
+}
