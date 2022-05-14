@@ -17,7 +17,8 @@ document.getElementById('check').addEventListener('click', function () {
     for (const wordElement of word_array) {
         word += wordElement.value
     }
-
+    word = word.toLowerCase()
+    console.log(word)
     function checker() {
         let element = document.getElementById(`row${round}`).getElementsByTagName('input')
         greenWord = 0
